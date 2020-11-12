@@ -1,0 +1,55 @@
+body{
+    font-family: "Leto", sans-serif;
+    /*font-family: 'Caveat', cursive;*/
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header .hero-container{
+    position: relative;
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 150px repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr)  ;
+    gap: 10px;
+    grid-template-areas:    "menu image image image"
+                            "menu image image image"
+                            "menu image image image";
+}
+
+.menu-container{
+    grid-area: menu;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;   
+}
+
+.menu-container span{
+    padding: 10px;
+}
+
+.container .drink{
+    border-radius: 5px;
+    padding: 10px;
+    background: #f2f2f2;
+    margin: 5px;
+}
+
+figure img{
+    width: 100%;
+    object-fit: cover;
+    grid-area: image;
+}
+
+figure{
+    margin: 0 auto;
+}
+
